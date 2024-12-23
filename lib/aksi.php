@@ -5,15 +5,12 @@ switch ($aksi) {
     case 'pesan':
         include 'main/pesan.php';
         break;
-    case 'detail':
+    case 'daftar':
         include 'main/detail.php';
         break;
-    case 'daftar':
-        include 'main/daftar.php';
-        break;
-
 
     default:
         include 'main/beranda.php';
         break;
 }
+?>
