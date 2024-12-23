@@ -13,7 +13,7 @@
                         <a class="nav-link" href="index.php?aksi=pesan">Pemesanan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?aksi=daftar">daftar</a>
+                        <a class="nav-link" href="index.php?aksi=detail">detail</a>
                     </li>
                 </ul>
             </div>
