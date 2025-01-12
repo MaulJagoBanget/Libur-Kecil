@@ -1,0 +1,255 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #EFE826;
+    color: white;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 8.5%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #2171B5;
+    margin-left: 4vh;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    margin: 0 auto;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #2171B5;
+    transition: color 0.3s;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.navbar-right {
+    list-style: none;
+    margin-right: 4vh;
+}
+
+.navbar-kanan {
+    text-decoration: none;
+    background-color: #2171B5;
+    color: #ffffff;
+    transition: color 0.3s;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1px 10px;
+    border-radius: 1vh;
+}
+
+.navbar-link:hover {
+    color: #ffffff;
+}
+
+.container-blue {
+    position: absolute;
+    /* Posisi absolut */
+    top: 10vh;
+    left: 15vh;
+    height: 700px;
+    width: 525px;
+    margin-top: 15px;
+    background-color: #2171B5;
+    border-radius: 40px;
+}
+
+.horizontal-line {
+    position: absolute;
+    left: 10%;
+    width: 34vh;
+    /* Lebar penuh */
+    height: 2px;
+    /* Ketebalan garis */
+    background-color: #ffffff;
+    /* Warna garis */
+    margin: 20px 0;
+    /* Spasi atas dan bawah */
+}
+
+.horizontal-line2 {
+    position: absolute;
+    right: 10%;
+    width: 6vh;
+    /* Lebar penuh */
+    height: 2px;
+    /* Ketebalan garis */
+    background-color: #ffffff;
+    /* Warna garis */
+    margin: 20px 0;
+    /* Spasi atas dan bawah */
+}
+
+.container-red {
+    flex: 1;
+    position: absolute;
+    /* Posisi absolut */
+    top: 10vh;
+    right: 15vh;
+    height: 579px;
+    width: 856px;
+    margin-top: 15px;
+    background-color: #b52121;
+    border-radius: 40px;
+}
+
+.container-medsos {
+    flex: 1;
+    position: absolute;
+    /* Posisi absolut */
+    bottom: 10vh;
+    right: 15vh;
+    height: 6vh;
+    width: 20vh;
+    margin-top: 15px;
+    background-color: #2171B5;
+    border-radius: 30px 0px 30px 0px;
+}
+
+.facebook .img img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding: 5px;
+    width: 40px;
+    /* Ukuran lebar ikon */
+    height: 40px;
+    /* Ukuran tinggi ikon */
+    transition: transform 0.3s ease;
+    /* Efek transisi saat hover */
+}
+
+.tiktok .img img {
+    position: absolute;
+    top: 10px;
+    left: 55px;
+    padding: 5px;
+    width: 40px;
+    /* Ukuran lebar ikon */
+    height: 40px;
+    /* Ukuran tinggi ikon */
+    transition: transform 0.3s ease;
+    /* Efek transisi saat hover */
+}
+
+.instagram .img img {
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    padding: 5px;
+    width: 40px;
+    /* Ukuran lebar ikon */
+    height: 40px;
+    /* Ukuran tinggi ikon */
+    transition: transform 0.3s ease;
+    /* Efek transisi saat hover */
+}
+
+.twitter .img img {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 5px;
+    width: 40px;
+    /* Ukuran lebar ikon */
+    height: 40px;
+    /* Ukuran tinggi ikon */
+    transition: transform 0.3s ease;
+    /* Efek transisi saat hover */
+}
+
+.button-detail {
+    padding-top: 60vh;
+    font-size: 30px;
+}
+
+
+.button {
+    padding: 3px 20px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #2171B5;
+    background-color: #EFE826;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+
+.text-container-blue {
+    padding: 15%;
+    padding-left: 10%;
+    padding-top: 20%;
+    position: absolute;
+    text-align: left;
+    font-size: 6rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+#wisata {
+    padding-top: 1100px;
+}
+
+
+
+
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        /* Ubah navbar menjadi kolom */
+        align-items: center;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        /* Ubah menu menjadi vertikal */
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .navbar-brand {
+        margin-left: 0;
+        margin-top: 1rem;
+        /* Pindahkan brand ke bawah menu */
+    }
+}
