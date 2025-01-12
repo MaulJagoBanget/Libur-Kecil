@@ -10,6 +10,7 @@ body {
     margin-left: 7vw;
     margin-right: 7vw;
     padding: 0;
+    background-image: linear-gradient(to bottom right, #fff 3%, #DEF0FF 55%);
 }
 
 /* Navbar Styling */
@@ -114,16 +115,55 @@ body {
     /* Spasi atas dan bawah */
 }
 
+.boxred {
+    position: absolute;
+    bottom: 23vh;
+    right: 69vh;
+    height: 24px;
+    width: 400px;
+    text-align: left;
+}
+
+.boxred h2 {
+    font-size: 27px;
+    color: #2171B5;
+    text-align: left;
+    margin: 0;
+    padding: 5px;
+    letter-spacing: 2px;
+    display: flex;
+    /* Mengatur teks dan ikon sejajar */
+    align-items: center;
+    justify-content: center;
+    /* Posisikan di tengah */
+    font-weight: 700;
+}
+
+.boxred h2 .icon {
+    width: 27px;
+    /* Lebar ikon */
+    height: 27px;
+    /* Tinggi ikon */
+}
+
 .container-red {
     flex: 1;
     position: absolute;
     /* Posisi absolut */
     top: 10vh;
-    right: 15vh;
+    right: 20vh;
     height: 579px;
     width: 856px;
     margin-top: 15px;
     background-color: #b52121;
+    border-radius: 40px;
+    box-shadow: 14px 14px 15px rgba(0, 0, 0, 0.2);
+    /* Tambahkan bayangan */
+}
+
+.editable-image {
+    width: 900px;
+    max-height: 100%;
     border-radius: 40px;
 }
 
@@ -224,11 +264,64 @@ body {
 }
 
 
-#wisata {
-    padding-top: 1100px;
+.fixed-image {
+    aspect-ratio: 16 / 9;
+    /* Rasio lebar terhadap tinggi */
+    width: 100%;
+    /* Mengisi lebar penuh container */
+    object-fit: cover;
+    /* Memastikan gambar tidak terdistorsi */
 }
 
+.custom-bg {
+    background-color: #2171B5;
+    /* Warna latar belakang */
+    color: #000000;
+    /* Warna teks */
+    border-radius: 0px 0px 10px 10px;
+    /* Opsional: tambahkan radius pada sudut */
+    padding: 15px;
+    /* Opsional: tambahkan jarak dalam */
+}
 
+.tentang {
+    display: flex;
+    flex-direction: column;
+    background-color: #2171B5;
+    max-width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.container .judul {
+    font-size: 100px;
+    margin-top: 16vh;
+    text-align: center;
+    justify-content: center;
+    color: #EFE826;
+}
+
+.text1{
+    color:#EFE826;
+    padding-top: 4rem;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.kontak{
+    padding-top: 15vh;
+    text-align: center;
+    justify-content: justify;
+    color: #EFE826
+}
+
+.kontak h2{
+    font-size: 70px;
+}
+.kontak p{
+    padding-top: 3vh;
+    font-size: 20px;
+}
 
 
 

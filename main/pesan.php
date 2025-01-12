@@ -1,10 +1,9 @@
-<h1>Pemesanan</h1>
-<main class="flex-shrink-0">
+<main class="flex-shrink-0 vh-100" style="padding-top:20px;">
 	<div class="container">
 		<form method="post" action="lib/proses.php">
 			<div class="card mt-2">
-				<div class="card-header bg-dark text-white">
-					Form Pemesanan Paket Wisata
+				<div class="card-header text-white" style="background-color:#2171B5;">
+					Pemesanan Paket Wisata
 				</div>
 				<div class="card-body">
 					<div class="mb-3">

@@ -14,11 +14,11 @@ if (mysqli_num_rows($query) == 0) {
 	$detail = mysqli_fetch_row($query);
 ?>
 
-	<main class="flex-shrink-0">
+	<main class="flex-shrink-0 vh-100 py-5">
 		<div class="container">
 			<form method="post" action="lib/proses.php">
 				<div class="card mt-2">
-					<div class="card-header bg-dark text-white">
+					<div class="card-header text-white" style="background-color: #2171B5;">
 						Detail Pemesanan Paket Wisata #<?= $detail[0] ?>
 					</div>
 					<div class="card-body">
